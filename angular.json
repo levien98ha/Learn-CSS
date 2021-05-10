@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "Learn-CSS": {
@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/common.scss"
             ],
             "scripts": []
           },
@@ -92,7 +93,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/common.scss"
             ],
             "scripts": []
           }
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Learn-CSS"
+    }
+  },
+  "defaultProject": "Learn-CSS",
+  "cli": {
+    "analytics": "e071ab3c-d4e3-4f0e-b289-434ce22e6a74"
+  }
 }
