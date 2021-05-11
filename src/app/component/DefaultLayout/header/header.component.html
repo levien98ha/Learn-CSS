@@ -1,11 +1,31 @@
 <div class="v-header-container">
   <div class="v-header-top">
-    
+    <div class="v-header-top-logo">
+      <img src="./../../../../assets/image/logo.png"  [routerLink]="['/']" alt="">
+    </div>
   </div>
   <div class="v-header-bottom">
     <div class="v-header-bottom-container">
       <div class="v-header-bottom-left">
+        <div class="v-header-menu">
+          <div class="v-header-menu-item" [routerLink]="['/']" routerLinkActive="v-menu-active">Home</div>
+          <div #learnTip class="v-header-menu-item v-menu-tip"
+            [routerLink]="['/tip']"
+            routerLinkActive="v-menu-active"
+            (mouseenter)="openTipMenu()"
+            (mouseleave)="closeTipMenu()">Learn Tip
+          </div>
+          <div #subMenu (mouseenter)="openTipMenu()" (mouseleave)="closeTipMenu()" class="v-sub-menu">
+            <div class="v-sub-menu-item v-sub-menu-mask"></div>
+            <div class="v-sub-menu-item">Javascript</div>
+            <div class="v-sub-menu-item">CSS</div>
+            <div class="v-sub-menu-item">HTML</div>
+          </div>
 
+          <div class="v-header-menu-item" [routerLink]="['/interview']" routerLinkActive="v-menu-active">Interview Question</div>
+          <div class="v-header-menu-item" [routerLink]="['/blog']" routerLinkActive="v-menu-active">Blog</div>
+          <div class="v-header-menu-item" [routerLink]="['/contact']" routerLinkActive="v-menu-active">Contact</div>
+        </div>
       </div>
       <div class="v-header-bottom-right"></div>
     </div>

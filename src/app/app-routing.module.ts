@@ -1,4 +1,4 @@
-import { HomeComponent } from './component/home/home.component';
+import { HomeComponent } from './page/home/home.component';
 import { DefaultLayoutComponent } from './component/DefaultLayout/default-layout/default-layout.component';
 import { HeaderComponent } from './component/DefaultLayout/header/header.component';
 import { NgModule } from '@angular/core';

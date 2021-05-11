@@ -1,0 +1,75 @@
+@import './../../../../assets/css/variable.scss';
+.v-footer-container {
+  // padding: 5px 10rem;
+}
+
+.v-footer-top {
+  padding: 10px 10rem;
+  background: $primary-color-light;
+  display: flex;
+  flex: 1;
+}
+.v-footer-menu-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.v-footer-menu-item {
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 5px 8px 5px;
+  position: relative;
+  width: fit-content;
+  transition: animation 0.25s ease-in-out;
+}
+
+.v-footer-menu-item::before {
+  animation: animate-footer-menu-out 0.25s linear forwards;
+}
+
+.v-footer-menu-item::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.v-footer-menu-item:hover::before {
+  animation: animate-footer-menu 0.25s linear forwards;
+}
+
+.v-footer-bottom {
+  padding: 10px 10rem;
+  background: #eee;
+  text-align: center;
+}
+
+@keyframes animate-footer-menu {
+  0% {
+    width: 0;
+    height: 2px;
+    background: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 2px;
+    background:  #fff;
+  }
+}
+
+@keyframes animate-footer-menu-out {
+  0% {
+    width: 100%;
+    height: 2px;
+    background:  #fff;
+  }
+  100% {
+    width: 0;
+    height: 2px;
+    background: transparent;
+  }
+}
